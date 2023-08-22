@@ -103,7 +103,7 @@ hr{
     left: 0%;
     height:500px ;
     width: 550px;
-    background: blue;
+    /* background: blue; */
     font-family: jsf;
 }
 .text2{
@@ -112,7 +112,7 @@ hr{
     margin-top: 110px;
     height:500px ;
     width: 550px;
-    background: blue;
+    /* background: blue; */
     font-family: jsf;
     color: rgb(0, 0, 0);
 }
@@ -188,7 +188,7 @@ table td{
     position: absolute;
     height:300px ;
     width: 550px;
-    background: yellow;
+    /* background: yellow; */
     font-family: jsf;
     color: rgb(0, 0, 0);
     top: 770px;
