@@ -18,14 +18,13 @@
                     <ul class="nav_links">
 
                         <li> <a href="#">About</a> </li>
-                        <li><a href="#">Calculator</a></li>
                         <li><a href="#">Tax rates</a></li>
-                        <li><a href="#">Information</a></li>
+                        <li><a href="">Calculator</a></li>
                     </ul>
                 </nav>
                 <button class="button10">Contact me</button>
             </header>
-            <section class="text1">
+            <section id="section1" class="text1">
                 <h1>Taxes</h1>
                 <br>
 
@@ -51,19 +50,19 @@
                 <br>
                 <br>
                 <br>
-                1. Income Tax (PAYE - Pay As You Earn): This is a progressive tax on an individual's income,
+                <b> 1.Income Tax (PAYE - Pay As You Earn)</b>: This is a progressive tax on an individual's income,
                 deducted at source by the employer. The rate varies depending on income levels.
                 <br>
                 <br>
-                2. National Social Security Fund (NSSF): Both employees and employers contribute a percentage of
+                <b> 2.National Social Security Fund (NSSF)</b>: Both employees and employers contribute a percentage of
                 the employee's salary to this retirement savings fund.
                 <br>
                 <br>
-                3. National Health Insurance Fund (NHIF): This provides medical coverage to employees and their
+                <b> 3.National Health Insurance Fund (NHIF)</b>: This provides medical coverage to employees and their
                 dependents. Contributions are deducted from an employee's salary.
                 <br>
                 <br>
-                4. The National Housing Development Fund (NHDF): This was first established in 2018 through the
+                <b> 4.The National Housing Development Fund (NHDF)</b>: This was first established in 2018 through the
                 Finance Act, and managed by the National Housing Corporation (NHC), with an objective of raising
                 funds from various sources in an initiative aimed at providing affordable housing to Kenyans
 
@@ -77,8 +76,10 @@
             </section>
             <hr>
             <div class="vertical"></div>
+            <hr class="hr1">
             <section class="middle">
                 <br>
+                
                 <div class="myform">
                     <form id="myform">
 
@@ -90,7 +91,7 @@
 
                         <input style="width: 125px;" class="amount12" type="number" id="amount2"
                             placeholder="Amount in KES" name="amount2"/>
-                        <button id="button10" type="submit" value="submit" onclick="thegross(),thenhif(),thenssf(),thenhdf(),theti(),thepaye(),thenets()">Calculate</button>
+                        <button id="button10" type="submit" value="submit">Calculate</button>
                         <br>
                         <div style="font-style: italic;color: red;" id="error"></div>
 
@@ -99,7 +100,7 @@
                 <br>
                 <br>
                 <div class="mytable">
-                    <table>
+                    <table class="tabb">
                         <thead>
                             <tr>
                                 <td>Description</td>
@@ -141,11 +142,11 @@
 
                     </table>
                 </div>
-
+                
             </section>
             <section class="meza">
                 <h1>Paye rate 2023</h1>
-                <table>
+                <table class="meza1">
                     <tr>
                         <th>Monthly Taxable Pay</th>
                         <th>Rate of Tax</th>
