@@ -31,7 +31,7 @@ myform.addEventListener("submit",
         
         
         let mypaye = findpaye(mytaxableincome);
-        document.getElementById("paye1").innerHTML = mypaye
+        document.getElementById("paye1").innerHTML = mypaye.toFixed(2)
 
         
         let mynetsalary = findnetsalary(mygrosssalary,mynhif,mynssf,mynhdf,mypaye);
@@ -39,7 +39,7 @@ myform.addEventListener("submit",
 
 
     }});
-{}
+
     function findgross( basicsalary,benefits) {
         gross = basicsalary + benefits
         return gross
@@ -49,7 +49,9 @@ myform.addEventListener("submit",
     function findnhif(mygrosssalary) {
         let nhif_contribution = 0;
 
-        if (mygrosssalary <= 5999) {
+        if (mygrosssalary <= 0 ) {
+            nhif_contribution = 0;
+        } else if (mygrosssalary > 0 && mygrosssalary<= 5999) {
             nhif_contribution = 150;
         } else if (mygrosssalary >= 6000 && mygrosssalary <= 7999) {
             nhif_contribution = 300;
@@ -127,10 +129,14 @@ myform.addEventListener("submit",
             tax = ((2400 + (mytaxableincome - 24000) * 0.25) - 2400)
         } else if (mytaxableincome > 32333 && mytaxableincome < 500001) {
             tax = ((4483.25 + (mytaxableincome - 32333) * 0.3) - 2400)
-        } else {
-            tax = ((144783.25 + (mytaxableincome - 500000) * 0.35) - 2400)
+        } else if (mytaxableincome > 500000 && mytaxableincome < 800001) {
+            tax = ((144783.25 + (mytaxableincome - 500000) * 0.325) - 2400)
+        }else {
+            tax = (( 242283.35+ (mytaxableincome - 800000) * 0.35) - 2400)
         }
         return tax
+
+        
     }
 
     function  findnetsalary(mygrosssalary,mynhif,mynhdf,mynssf,mypaye) {

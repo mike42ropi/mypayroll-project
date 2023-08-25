@@ -2,12 +2,27 @@
     font-family: jsf;
     src: url(jsf.ttf);
 }
+@media(max-width:700px){
+.text1{
+    background-color: chocolate; 
+}
+.text2{
+
+    background-color:red; 
+}
+.meza{
+    background-color: chartreuse;
+}
+.mytable{
+    background-color: cornflowerblue;
+}
+}
 
 body{
-    background-image: url(bfin.jpg);
+    background-image: url(rev.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1650px;
+    height: 1950px;
 }
 .docs{
     position: relative;  
@@ -19,21 +34,14 @@ body{
     left: 40%;
     top: 20px;  
 }  */
-li, a {
-    font-family: jsf;
-    font-weight: 500;
-    font-size: 15px;
-    text-decoration: none;
-    color: #ffffff;
-    
-}
+
 header{
-    position: sticky;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10px;
-    background-color: rgb(211, 204, 204);
+    background-color:rgb(76,153,199);
     height: 10px;
     margin-top: -10px;
     width: 98%;
@@ -44,77 +52,28 @@ header{
     margin-left: -240px;
     margin-top: -50px;
 }
-.nav_links{
-    list-style:none;
 
-}.nav_links li{
-    display: inline-block;
-    padding: 8px 20px;
-}
- li {
-    transition: all 0.3s ease 0s;
-}
- li  :hover{
-    color:rgb(87, 123, 207);  
-} 
-
-.button10 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 6px 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
-  border-radius: 6px;
-  border: none;
-
-  color: #fff;
-  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
-   background-origin: border-box;
-  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button10:hover {
-  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
-  outline: 0;
-  transition: all 0.3s ease 0s;
-}
-
-hr{
-    position: absolute;
-    width: 100%;
-    height: 0px;
-    background-color: rgb(0, 0, 0);
-    top: 240%;
-}
-.vertical{
-    position:absolute;
-    border-left: 1px solid black;
-    height: 520px;
-    left: 50%;
-    top: 179px;
-    
-}
 .text1{
     position: absolute;
     top: 180px;
     left: 0%;
     height:500px ;
-    width: 550px;
+    /* width: 550px; */
     /* background: blue; */
     font-family: jsf;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
 }
 .text2{
-    /* position: absolute; */
-    float: right;
-    margin-top: 110px;
+    position: absolute;
+    float: left;
+   top: 580px;
     height:500px ;
-    width: 550px;
+    /* width: 550px; */
     /* background: blue; */
     font-family: jsf;
     color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
 }
 
 .first{
@@ -125,7 +84,7 @@ hr{
     font-family:jsf ;
     font-size: 15px;
     left: 0%;
-    top:1120px;
+    top:1320px;
     
 } 
 .middle{
@@ -134,7 +93,7 @@ hr{
     display: inline-block;
     /* opacity: 60%; */
     font-family: jsf;
-    top: 1200px;
+    top: 1400px;
     left: 0%;
     width: 1050px;
     box-shadow: 0px 0px 2px 0pxrgb(251,251,251);
@@ -178,6 +137,7 @@ label{
     border-collapse: collapse;
     width: 900px;
     height:300px ;
+    color: rgb(0, 0, 0);
 }
 
 .tabb td{
@@ -190,7 +150,24 @@ label{
     width: 100%;
     height: 1px;
     background-color: rgb(0, 0, 0);
-    top:700px;
+    top:500px;
+    border: 0px solid black;
+}
+.hr2{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+  top: 900px;
+    border: 0px solid black;
+}
+.hr3{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    top:1280px;
+    border: 0px solid black;
 }
  .meza{
     position: absolute;
@@ -199,16 +176,16 @@ label{
     /* background: yellow; */
     font-family: jsf;
     color: rgb(0, 0, 0);
-    top: 800px;
+    top: 950px;
     left: 0%;
  }
  .meza1{
     border-collapse: collapse;
-    width: 300px;
+    width: 500px;
 }
 
 .meza1 td{
     border: 2px solid black;
-    height: 30px;
+    height: 40px;
     margin-top: 15px;
  }

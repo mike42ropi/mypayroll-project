@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    
+    <title>myTax</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="docs">
+            <header>
+                <img class="logo" src="mbc.png">
+
+            </header>
+            <div class="sectionstext">
+                <section id="section1" class="text1">
+                    <h1>Taxes</h1>
+                    <br>
+
+                    <p>Taxes play a pivotal role in shaping the economic landscape of any country, and Kenya is no
+                        exception. As a developing nation with aspirations of achieving sustained economic growth and
+                        improved social welfare, understanding the intricate web of taxation is crucial.</p>
+
+
+                    <p>From the revenue generated to fund public services and infrastructure development to the
+                        redistribution of wealth and promotion of economic stability, taxes are the backbone of a
+                        nation's financial ecosystem.</p>
+                    <br>
+
+                    <p>Please keep in mind that tax laws and regulations can change, and specific circumstances can
+                        vary, so
+                        it's important to refer to the most recent and accurate sources for information regarding taxes
+                        and
+                        deductions in Kenya. If you're an employee, your employer's payroll department or a tax
+                        professional
+                        should be able to provide you with precise details about the taxes and deductions that apply to
+                        your
+                        situation.</p>
+                    <br>
+                </section>
+                <section class="text2">
+                    <h2>Types of Taxes</h2>
+                    <br>
+                    <br>
+                    <br>
+                    <b> 1.Income Tax (PAYE - Pay As You Earn)</b>: This is a progressive tax on an individual's income,
+                    deducted at source by the employer. The rate varies depending on income levels.
+                    <br>
+                    <br>
+                    <b> 2.National Social Security Fund (NSSF)</b>: Both employees and employers contribute a percentage
+                    of
+                    the employee's salary to this retirement savings fund.
+                    <br>
+                    <br>
+                    <b> 3.National Health Insurance Fund (NHIF)</b>: This provides medical coverage to employees and
+                    their
+                    dependents. Contributions are deducted from an employee's salary.
+                    <br>
+                    <br>
+                    <br>
+                    <b> 4.The National Housing Development Fund (NHDF)</b>: This was first established in 2018 through
+                    the
+                    Finance Act, and managed by the National Housing Corporation 
+                    <br>(NHC), with an objective of raising
+                    funds from various sources in an initiative aimed at providing affordable housing to Kenyans
+
+                </section>
+            </div>
+            <section class="first">
+                <div class="head">
+                    <h1>NET PAY CALCULATOR</h1>
+                    <p>Enter your gross salary below amount to calculte your net amount</p><br>
+                </div>
+            </section>
+            <hr class="hr2">
+            <hr class="hr1">
+            <hr class="hr3">
+            <section class="middle">
+                <br>
+
+                <div class="myform">
+                    <form id="myform">
+
+                        <label>Basic Salary</label>
+
+                        <input style="width: 125px;" class="amount11" type="number" id="amount1"
+                            placeholder="Amount in KES" name="amount1">
+                        <label>Benefits</label>
+
+                        <input style="width: 125px;" class="amount12" type="number" id="amount2"
+                            placeholder="Amount in KES" name="amount2" />
+                        <button
+                            style="background-color: rgb(50,46,49); border:1px solid rgb(50,46,49) ;height: 25px; color: white;font-family: jsf;"
+                            id="button10" type="submit" value="submit">Calculate</button>
+                        <br>
+                        <div style="font-style: italic;color: red;" id="error"></div>
+
+                    </form>
+                </div>
+                <br>
+                <br>
+                <div class="mytable">
+                    <table style="font-size: 20px;" class="tabb">
+                        <thead>
+                            <tr>
+                                <td>Description</td>
+                                <td style="text-align: right;">Result</td>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Gross Salary</td>
+                            <td style="text-align: right;" id="gs1"></td>
+                        </tr>
+                        <tr>
+                            <td>NHIF</td>
+                            <td style="text-align: right;" id="nhif1"></td>
+                        </tr>
+
+                        <tr>
+                            <td>NSSF</td>
+                            <td style="text-align: right;" id="nssf1"></td>
+                        </tr>
+                        <tr>
+                            <td>NHDF</td>
+                            <td style="text-align: right;" id="nhdf1"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Taxable income</td>
+                            <td style="text-align: right;" id="txi1"></td>
+
+                        </tr>
+
+                        <tr>
+                            <td>P.A.Y.E</td>
+                            <td style="text-align: right;" id="paye1"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Net salary</td>
+                            <td style="text-align: right;" id="nets1"></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </section>
+            <section class="meza">
+                <h1>Paye rate 2023</h1>
+                <table id="mezaa" class="meza1">
+                    <tr>
+                        <th>Monthly Taxable Pay</th>
+                        <th style="text-align: right;">Rate of Tax</th>
+                    </tr>
+                    <tr>
+                        <td>Up to Ksh24,000</td>
+                        <td style="text-align: right;">10%</td>
+                    </tr>
+                    <tr>
+                        <td>24,001 to Ksh32,333</td>
+                        <td style="text-align: right;">25%</td>
+                    </tr>
+                    <tr>
+                        <td>Ksh32,334 to Ksh500,000</td>
+                        <td style="text-align: right;">30%</td>
+                    </tr>
+                    <tr>
+                        <td>Ksh500,000 to Ksh800,000</td>
+                        <td style="text-align: right;">32.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Above Ksh800,000</td>
+                        <td style="text-align: right;">35%</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </div>
+
+</body>
+
+</html>
